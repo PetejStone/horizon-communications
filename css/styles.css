@@ -450,7 +450,8 @@ footer {
     color: #fff;
     padding: 1em 4em;
     border-radius: 5px;
-    font-size: 12px; }
+    font-size: 12px;
+    box-shadow: 2px 2px 5px #d1d1d1; }
   .button--card {
     background-color: #000;
     color: #fff;

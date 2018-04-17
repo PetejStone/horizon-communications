@@ -2,7 +2,7 @@
   color: $white;
   border-radius: 5px;
   padding: 1em;
-  
+
   background-color: #ffb84d;
   &--quote {
     box-shadow: -1px 1px 5px $light-grey;
@@ -14,6 +14,7 @@
     padding: 1em 4em;
     border-radius: 5px;
     font-size: 12px;
+    box-shadow: 2px 2px 5px $light-grey;
 
   }
   &--card {
