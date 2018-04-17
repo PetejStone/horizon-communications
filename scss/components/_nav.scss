@@ -1,0 +1,28 @@
+
+nav ul {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  @include flexy(flex,row, null, space-between);
+  & li {
+    margin-right: 1em;
+    & a {
+      color: $black;
+
+    }
+  }
+}
+
+
+
+
+.active-link {
+  color: $black;
+}
+.active {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #ffb84d;
+  @extend %center;
+}

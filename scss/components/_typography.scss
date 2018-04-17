@@ -1,0 +1,34 @@
+
+* {
+  font-family: $source-sans-pro;
+}
+
+nav ul li a {
+  color: $inactive-grey;
+  font-size: 10px;
+}
+
+.title-text {
+  &--black {
+    font-weight: $font-weight--bold;
+    margin-left: 1em;
+  }
+  &--white {
+    font-weight: $font-weight--bold;
+    margin-left: 1em;
+
+  }
+
+}
+
+footer {
+  color: $white;
+  & p {
+    font-size: 8px;
+    align-self: center;
+    margin-right: 1em;
+    @include mq(medium) {
+      margin-right: 15em;
+    }
+  }
+}

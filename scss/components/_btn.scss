@@ -1,0 +1,25 @@
+.button {
+  color: $white;
+  border-radius: 5px;
+  padding: 1em;
+  background-color: #ffb84d;
+  &--quote {
+    box-shadow: -1px 1px 5px $black;
+    font-size: 10px;
+  }
+  &--learn {
+    background-color: #ffb84d;
+    color: $white;
+    padding: 1em 4em;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  &--card {
+    background-color: $black;
+    color: $white;
+    padding: 1em;
+    font-size: 12px;
+    float: left;
+  }
+
+}
