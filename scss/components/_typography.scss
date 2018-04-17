@@ -26,7 +26,6 @@ footer {
   & p {
     font-size: 8px;
     align-self: center;
-    margin-right: 1em;
     @include mq(medium) {
       margin-right: 15em;
     }

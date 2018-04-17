@@ -14,7 +14,7 @@
 }
 
 .image-list {
-  margin-top: 2em;
+  margin: 4em 0;
   @extend %center;
   @include flexy(flex, row, null, space-around);
   flex-wrap: wrap;

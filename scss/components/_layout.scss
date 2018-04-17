@@ -18,10 +18,9 @@ header {
     margin-right: auto;
   }
   &--footer {
-    @include flexy(flex, row);
+    @include flexy(flex, row, null);
     align-items: center;
-    margin-right: auto;
-    margin-left: 1em;
+    margin: 0;
 }
 
 }
@@ -60,16 +59,20 @@ main {
   @include mq(medium) {
     width: 35%;
   }
+  & p {
+    line-height: 30px;
+    margin-bottom: 2em;
+  }
 }
 
 .home-cards {
-  height: 40em;
+  height: 45em;
   width: 100%;
   background: linear-gradient(to right, #ffcc00, #e67300);
   @include flexy(flex, row);
   align-items: center;
   @include mq(medium) {
-    height: 20em;
+    height: 30em;
   }
 }
 
@@ -118,10 +121,10 @@ main {
 }
 
 footer {
-  background-color: #333333;
+  background-color: darken(#333333, 10%);
   width: 100%;
   height: 7em;
-  @include flexy(flex,row, null);
+  @include flexy(flex,row, null, space-around);
 
 
 }

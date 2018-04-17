@@ -4,7 +4,7 @@
   padding: 1em;
   background-color: #ffb84d;
   &--quote {
-    box-shadow: -1px 1px 5px $black;
+    box-shadow: -1px 1px 5px $light-grey;
     font-size: 10px;
   }
   &--learn {
@@ -13,6 +13,7 @@
     padding: 1em 4em;
     border-radius: 5px;
     font-size: 12px;
+
   }
   &--card {
     background-color: $black;
