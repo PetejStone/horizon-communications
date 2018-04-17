@@ -90,12 +90,17 @@ main {
 
 .card {
   width: 100%;
-  height: 90%;
+  height: 100%;
   border-radius: 15px;
   background-color: $white;
   margin: 1em;
   padding: 2em;
+  display: block;
+
   @extend %center;
+  @include mq(medium) {
+    @include flexy(flex, column);
+  }
 
   & h2,
   & p {
@@ -105,6 +110,9 @@ main {
     font-weight: $font-weight--thin;
     font-size: 12px;
     margin-top: 0;
+    margin-bottom: auto;
+    line-height: 25px;
+
   }
 
 }
@@ -125,6 +133,13 @@ footer {
   width: 100%;
   height: 7em;
   @include flexy(flex,row, null, space-around);
+  & p {
+    align-self: center;
+    line-height: 12px;
+    @include mq(medium) {
+      margin-right: 15em;
+    }
+  }
 
 
 }

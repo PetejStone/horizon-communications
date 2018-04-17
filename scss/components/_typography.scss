@@ -25,10 +25,6 @@ footer {
   color: $white;
   & p {
     font-size: 8px;
-    align-self: center;
-    line-height: 12px;
-    @include mq(medium) {
-      margin-right: 15em;
-    }
+    
   }
 }
