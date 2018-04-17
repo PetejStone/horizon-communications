@@ -591,9 +591,6 @@ footer {
   footer p {
     align-self: center;
     line-height: 12px; }
-    @media (min-width: 768px) {
-      footer p {
-        margin-right: 15em; } }
 
 [class^=icon-] {
   display: block;
