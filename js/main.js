@@ -22,4 +22,5 @@ for (let i=0; i < navLink.length; i++) {
 //sets home icon as default when page loads
 window.addEventListener('load', ()=> {
   hide[0].className = 'active';
+  navLink[0].className = 'active-link';
 });
