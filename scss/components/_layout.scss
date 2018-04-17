@@ -110,7 +110,7 @@ main {
     font-weight: $font-weight--thin;
     font-size: 12px;
     margin-top: 0;
-    margin-bottom: 1em;
+    margin-bottom: 3em;
     line-height: 25px;
     @include mq(medium){
       margin-bottom: auto;

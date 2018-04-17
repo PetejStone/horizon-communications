@@ -20,12 +20,12 @@
   &--card {
     background-color: $black;
     color: $white;
-    padding: 1em;
+    padding: 1em 25%;
     font-size: 12px;
-    float: left;
-    width: 100%;
     @include mq(medium) {
       width: 10em;
+      padding: 1em;
+      float: left;
     }
   }
 }
