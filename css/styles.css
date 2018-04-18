@@ -1,3 +1,4 @@
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro");
 body, .active, .title-content, .banner h1, .mission, .card-list, .card, .arrow-down, [class^=icon-], .header-image, #target, .image-list {
   margin: 0 auto; }
 
@@ -416,7 +417,7 @@ nav ul {
   background-color: #ffb84d; }
 
 * {
-  font-family: "Source Sans Pro", sans-serif; }
+  font-family: sans-serif; }
 
 nav ul li a {
   color: #808080;
@@ -642,12 +643,16 @@ footer {
   width: 100%;
   max-width: 900px; }
   .image-list img {
-    width: 200px;
-    height: 200px;
+    width: 175px;
+    height: 175px;
     max-width: 100%;
     border-radius: 15px;
     box-shadow: 2px 2px 5px #d1d1d1;
     margin-top: 1em; }
+    @media (min-width: 600px) {
+      .image-list img {
+        width: 200px;
+        height: 200px; } }
 
 .card img {
   width: 50px;
