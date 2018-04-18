@@ -16,15 +16,28 @@ nav ul li a {
   &--white {
     font-weight: $font-weight--bold;
     margin-left: 1em;
-
+    text-align: left;
   }
+}
 
+p {
+  font-size: 16px;
+}
+
+.card {
+  & p {
+    font-weight: $font-weight--thin;
+  }
 }
 
 footer {
   color: $white;
   & p {
-    font-size: 8px;
-    
+    font-size: 10px;
+    text-align: center;
+    @include mq(small){
+      font-size: 10px;
+      text-align: center;
+    }
   }
 }
