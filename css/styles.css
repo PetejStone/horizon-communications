@@ -445,7 +445,7 @@ footer {
     @media (min-width: 600px) {
       footer p {
         font-size: 10px;
-        text-align: center; } }
+        text-align: left; } }
 
 .button {
   color: #fff;
@@ -461,7 +461,8 @@ footer {
     padding: 1em 4em;
     border-radius: 5px;
     font-size: 12px;
-    box-shadow: 2px 2px 5px #d1d1d1; }
+    box-shadow: 2px 2px 5px #d1d1d1;
+    font-weight: 700; }
   .button--card {
     background-color: #000;
     color: #fff;
