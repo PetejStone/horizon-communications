@@ -93,18 +93,21 @@ main {
   border-radius: 15px;
   background-color: $white;
   margin: 1em;
-  padding: 2em;
-  display: block;
+  padding: 2em 2em 0 2em;
+  // display: block;
+  @include flexy(flex, column, null, flex-end);
   @extend %center;
   @include mq(medium) {
-    @include flexy(flex, column);
+    // @include flexy(flex, column);
+
   }
-  & h2,
-  & p {
+  & h2 {
     text-align: left;
+    margin-top: auto;
   }
   & p {
     margin-top: 0;
+    text-align: left;
     margin-bottom: 3em;
     line-height: 25px;
     @include mq(medium){

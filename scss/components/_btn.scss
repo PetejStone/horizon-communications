@@ -23,6 +23,7 @@
     color: $white;
     padding: 1em 25%;
     font-size: 12px;
+    margin-bottom: 2em;
     @include mq(medium) {//floats button to the  left when 750px or larger
       width: 10em;
       padding: 1em;

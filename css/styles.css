@@ -467,7 +467,8 @@ footer {
     background-color: #000;
     color: #fff;
     padding: 1em 25%;
-    font-size: 12px; }
+    font-size: 12px;
+    margin-bottom: 2em; }
     @media (min-width: 768px) {
       .button--card {
         width: 10em;
@@ -538,7 +539,7 @@ main {
     margin-bottom: 2em; }
 
 .home-cards {
-  height: 50em;
+  height: 55em;
   width: 100%;
   background: linear-gradient(to right, #ffcc00, #e67300);
   display: flex;
@@ -566,16 +567,16 @@ main {
   border-radius: 15px;
   background-color: #fff;
   margin: 1em;
-  padding: 2em;
-  display: block; }
-  @media (min-width: 768px) {
-    .card {
-      display: flex;
-      flex-direction: column; } }
-  .card h2, .card p {
-    text-align: left; }
+  padding: 2em 2em 0 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; }
+  .card h2 {
+    text-align: left;
+    margin-top: auto; }
   .card p {
     margin-top: 0;
+    text-align: left;
     margin-bottom: 3em;
     line-height: 25px; }
     @media (min-width: 768px) {
