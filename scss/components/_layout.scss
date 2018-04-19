@@ -3,7 +3,7 @@ header {
   align-items: center;
   margin-top: 1em;
   margin-bottom: 1em;
-  @include mq(medium) {
+  @include mq(medium) {  //changes header contents to 'row' @750px or larger
     @include flexy(flex, row);
   }
 }
@@ -13,7 +13,7 @@ header {
   @include flexy(flex, column);
   @extend %center;
   @include mq(medium) {
-    @include flexy(flex,row);
+    @include flexy(flex,row);//changes the logo and text to row @750px or larger
     margin-left: 1em;
     margin-right: auto;
   }
@@ -21,7 +21,7 @@ header {
     @include flexy(flex, row, null);
     align-items: center;
     @include mq(small) {
-      margin: 0;
+      margin: 0; //removes margin @550px or larger
     }
 }
 }
@@ -29,39 +29,39 @@ header {
 .banner {
   text-align: center;
   max-width: 100%;
-  height: 10em;
+  height: 15em;
   background-image: url('../images/header.jpg');
   background-size: cover;
   color: $white;
   margin-bottom: 3em;
   @include flexy(flex, column, null, center);
   @include mq(medium) {
-    height: 22em;
+    height: 22em; //chanes height of banner @750px or larger
   }
   & h1 {
     width: 100%;
     @extend %center;
     transform: scale(.5);
     @include mq(medium) {
-      transform: scale(1.2);
+      transform: scale(1.2); //scales the header text @750px or larger
       width: 40%;
     }
   }
 }
 
 main {
-  text-align: center;
+  text-align: center; //center aligns all the content in the main element
 }
 
-.mission {
+.mission {  //centers mission statement and narrows the width
   width: 90%;
   @extend %center;
   @include mq(medium) {
     width: 35%;
   }
   & p {
-    line-height: 30px;
-    margin-bottom: 2em;
+    line-height: 30px;  //gives line height to the mission text
+    margin-bottom: 2em; //white space
   }
 }
 
@@ -72,7 +72,7 @@ main {
   @include flexy(flex, row);
   align-items: center;
   @include mq(medium) {
-    height: 30em;
+    height: 30em; //changes height of the card section to fit the changed media query
   }
 }
 
@@ -82,7 +82,7 @@ main {
   width: 90%;
   max-width: 1000px;
   @extend %center;
-  @include mq(medium) {
+  @include mq(medium) {    //changes the card layout to row @750px or larger
     @include flexy(flex, row);
   }
 }
@@ -108,34 +108,34 @@ main {
     margin-bottom: 3em;
     line-height: 25px;
     @include mq(medium){
-      margin-bottom: auto;
+      margin-bottom: auto; //pushes button to the bottom of the card
     }
   }
 }
 
 
-.arrow-down {
+.arrow-down {  //cretes an arrow in the layout
   width: 0;
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   border-top: 20px solid $white;
   @extend %center;
-  transform: translateY(100%);
+  transform: translateY(100%); //moves the arrow 'down' overlapping the card-list section so it is visible
 }
 
 footer {
   background-color: darken(#333333, 10%);
   width: 100%;
-  height: 10em;
+  height: 12em;
   @include flexy(flex,column, null, space-around);
   @include mq(small) {
-    height: 7em;
+    height: 7em;  ///changes layout of footer @550px or larger
     @include flexy(flex, row, null, space-around);
   }
   & p {
-    align-self: center;
+    align-self: center; //aligns the footer 'p' elements to center
     line-height: 12px;
-    margin: 0;
+    margin: 0; //gets rid of margin and uses 'space around' to create spacing
   }
 }

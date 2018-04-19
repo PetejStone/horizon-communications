@@ -1,11 +1,12 @@
+//
+// .header-image {
+//   width: 1400px;
+//   max-width: 100%;
+//   display: block;
+//   @extend %center;
+// }
 
-.header-image {
-  width: 1400px;
-  max-width: 100%;
-  display: block;
-  @extend %center;
-}
-
+//sets width of target icon
 #target {
   @extend %center;
   display: block;
@@ -13,11 +14,12 @@
   max-width: 100%;
 }
 
+//tarets the images list
 .image-list {
   margin-top: 4em;
   margin-bottom: 2em;
   @extend %center;
-  @include flexy(flex, row, null, space-around);
+  @include flexy(flex, row, null, space-around);//sets display to evenly spaced flexbox
   flex-wrap: wrap;
   width: 100%;
   max-width: 900px;
@@ -28,7 +30,7 @@
     border-radius: 15px;
     box-shadow: 2px 2px 5px $light-grey;
     margin-top: 1em;
-    @include mq(small){
+    @include mq(small){ //changes width when 550px or larger
       width: 200px;
       height: 200px;
     }
@@ -42,11 +44,11 @@
     height: 50px;
     display: block;
     margin: 10px;
-    position: relative;
-    top: 0;
+    position: relative; // Sets the icon position at a relative to the card 
+    top: 0px;
     right: 0px;
-    bottom: 0;
-    left: 0;
-    margin: 0;
+    bottom: 0px;
+    left: 0px;
+    margin: 0px;
   }
 }

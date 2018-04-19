@@ -1,12 +1,13 @@
+//imports google fonts
 @import url($font-url-google + "Source+Sans+Pro");
 
-* {
+* { //sets universal font set
   font-family: sans-serif;
 }
 
 nav ul li a {
-  color: $inactive-grey;
-  font-size: 10px;
+  color: $inactive-grey; //inactive color of nav item when not on that page
+  font-size: 12px;
 }
 
 .title-text {
@@ -22,7 +23,7 @@ nav ul li a {
 }
 
 p {
-  font-size: 16px;
+  font-size: 16px; //sets all p element font to defualt 16px
 }
 
 .card {
@@ -37,7 +38,7 @@ footer {
     font-size: 10px;
     text-align: center;
     @include mq(small){
-      font-size: 10px;
+      font-size: 12px; //changes font size when screen is @550px or larger
       text-align: left;
     }
   }

@@ -1,4 +1,4 @@
-[class^=icon-] {
+[class^=icon-] { //Targets all 'sprite' icons
   display: block;
   width: 42px;
   height: 32px;
@@ -14,7 +14,7 @@
 }
 
 
-
+//targets different icons in the sprite sheet by changing the background position to the negative X value
 .icon-horizon-black {
   background-position: 0px 0px;
 }

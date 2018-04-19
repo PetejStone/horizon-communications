@@ -1,8 +1,9 @@
+
+//styles buttons
 .button {
   color: $white;
   border-radius: 5px;
   padding: 1em;
-
   background-color: #ffb84d;
   &--quote {
     box-shadow: -1px 1px 5px $light-grey;
@@ -22,7 +23,7 @@
     color: $white;
     padding: 1em 25%;
     font-size: 12px;
-    @include mq(medium) {
+    @include mq(medium) {//floats button to the  left when 750px or larger
       width: 10em;
       padding: 1em;
       float: left;

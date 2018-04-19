@@ -1,21 +1,20 @@
 
 nav ul {
   width: 100%;
-  margin-top: 0;
+  margin-top: 0; //gets rid of margin and uses the 'header margin' as spacing
   margin-bottom: 0;
   @include flexy(flex,row, null, space-between);
   & li {
     margin-right: 1em;
     & a {
       color: $black;
-
     }
   }
 }
 
 
 
-
+//classes to show which page the user is on...toggled through Javascript
 .active-link {
   color: $black;
 }
