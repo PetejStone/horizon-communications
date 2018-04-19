@@ -66,7 +66,7 @@ main {
 }
 
 .home-cards {
-  height: 50em;
+  height: 55em;
   width: 100%;
   background: linear-gradient(to right, #ffcc00, #e67300);
   @include flexy(flex, row);
