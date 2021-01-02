@@ -597,7 +597,7 @@ footer {
   height: 12em;
   display: flex;
   flex-direction: column;
-  justify-content: space-around; }
+  justify-content: space-evenly; }
   @media (min-width: 600px) {
     footer {
       height: 7em;

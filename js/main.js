@@ -24,3 +24,4 @@ window.addEventListener('load', ()=> {
   hide[0].className = 'active';
   navLink[0].className = 'active-link';
 });
+ 
